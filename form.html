@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        width: 500px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+      }
+
+      .form-group > input {
+        padding: 10px 5px;
+        border-radius: 5px;
+        border: 1px solid rgb(89, 155, 199);
+        outline: 0;
+      }
+
+      .form-group > button {
+        padding: 10px;
+        border: 0px;
+        cursor: pointer;
+        background-color: rgb(62, 134, 182);
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .form-group > button:hover {
+        background-color: rgb(42, 138, 202);
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <form action="">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required placeholder="Nome" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" required placeholder="Senha" />
+        </div>
+
+        <div class="form-group">
+          <button>Salvar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
